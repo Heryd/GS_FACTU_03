@@ -1,0 +1,15 @@
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.csprojAssemblyReference.cache
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.Frm_Login.resources
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.Properties.Resources.resources
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.GenerateResource.cache
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\bin\Debug\Capa_Presentacion.exe.config
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\bin\Debug\Capa_Presentacion.exe
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\bin\Debug\Capa_Presentacion.pdb
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.exe
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.pdb
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\bin\Debug\Capa_Negocio.dll
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\bin\Debug\Capa_Negocio.pdb
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.User_Controls.TextBox_Control.resources
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.CopyComplete
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Presentacion\obj\Debug\Capa_Presentacion.Frm_Menu.resources

@@ -1,0 +1,5 @@
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\silla\source\repos\GS_FACT_03\Capa_Datos\obj\Debug\Capa_Datos.pdb
