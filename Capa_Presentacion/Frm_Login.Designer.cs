@@ -84,7 +84,6 @@
             this.btn_Login.Size = new System.Drawing.Size(573, 58);
             this.btn_Login.TabIndex = 11;
             this.btn_Login.Text = "INICIAR SESION";
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
@@ -138,6 +137,7 @@
             // txt_user
             // 
             this.txt_user.BackColor = System.Drawing.Color.White;
+            this.txt_user.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.txt_user.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.txt_user.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(181)))), ((int)(((byte)(11)))));
             this.txt_user.BorderRadius = 5;

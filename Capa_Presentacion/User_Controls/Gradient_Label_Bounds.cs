@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace Capa_Presentacion
 {
-    internal class Gradient_Label_Bounds : Label
+    public class Gradient_Label_Bounds : Label
     {
         private Color rightColor = Color.FromArgb(24, 24, 24);
         private Color leftColor = Color.FromArgb(40, 40, 40);
@@ -65,7 +65,7 @@ namespace Capa_Presentacion
 
         [Category("Appearance")]
         [Description("La alineación del texto dentro del label.")]
-        public ContentAlignment TextAlign
+        public override ContentAlignment TextAlign
         {
             get { return textAlign; }
             set
