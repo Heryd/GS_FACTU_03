@@ -2,8 +2,6 @@
 using Capa_Presentacion.User_Controls;
 using System;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace Capa_Presentacion
@@ -16,14 +14,14 @@ namespace Capa_Presentacion
         private bool showPanelPago;
         private bool showPanelCliente;
         private bool showPanelReembolso;
-
+        
+        //Confirmaciones de los botones del CRUD
         private bool confirm_button_Create;
         private bool confirm_button_Read;
         private bool confirm_button_Update;
         private bool confirm_button_Delete;
 
         private RJButton current_Button;
-
         #endregion
 
         public Frm_Menu()
@@ -382,9 +380,11 @@ namespace Capa_Presentacion
         }
         #endregion
 
+        #region Minimizar_Ventana
         private void btn_Minimizar_Ventana_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
+        #endregion
     }
 }
