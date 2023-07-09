@@ -37,13 +37,12 @@
             this.pnDown_Pago = new System.Windows.Forms.Panel();
             this.pnDown_Factura = new System.Windows.Forms.Panel();
             this.pnl_User = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_Name_User = new System.Windows.Forms.Label();
             this.lbl_Rol_User = new System.Windows.Forms.Label();
             this.clock_Pago = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pn_Form_Hijo = new System.Windows.Forms.Panel();
             this.pcb_Tittle = new System.Windows.Forms.PictureBox();
-            this.pcb_Profile_User = new System.Windows.Forms.PictureBox();
-            this.pcb_Separator_Profile = new System.Windows.Forms.PictureBox();
             this.btn_Help = new Capa_Presentacion.User_Controls.RJButton();
             this.btn_Close = new Capa_Presentacion.User_Controls.RJButton();
             this.btn_Eliminar_Reembolso = new Capa_Presentacion.User_Controls.RJButton();
@@ -69,6 +68,8 @@
             this.btn_HOME = new Capa_Presentacion.User_Controls.RJButton();
             this.btn_Minimizar_Ventana = new Capa_Presentacion.User_Controls.RJButton();
             this.btn_Cerrar_Ventana = new Capa_Presentacion.User_Controls.RJButton();
+            this.pcb_Profile_User = new System.Windows.Forms.PictureBox();
+            this.pcb_Separator_Profile = new System.Windows.Forms.PictureBox();
             this.panel_Left.SuspendLayout();
             this.pnDown_More_Options.SuspendLayout();
             this.pnDown_Reembolso.SuspendLayout();
@@ -98,7 +99,7 @@
             this.panel_Left.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_Left.Location = new System.Drawing.Point(0, 0);
             this.panel_Left.Name = "panel_Left";
-            this.panel_Left.Size = new System.Drawing.Size(336, 962);
+            this.panel_Left.Size = new System.Drawing.Size(336, 980);
             this.panel_Left.TabIndex = 29;
             // 
             // pnDown_More_Options
@@ -107,7 +108,7 @@
             this.pnDown_More_Options.Controls.Add(this.btn_Help);
             this.pnDown_More_Options.Controls.Add(this.btn_Close);
             this.pnDown_More_Options.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnDown_More_Options.Location = new System.Drawing.Point(0, 841);
+            this.pnDown_More_Options.Location = new System.Drawing.Point(0, 859);
             this.pnDown_More_Options.Name = "pnDown_More_Options";
             this.pnDown_More_Options.Size = new System.Drawing.Size(336, 121);
             this.pnDown_More_Options.TabIndex = 69;
@@ -120,7 +121,7 @@
             this.pnDown_Reembolso.Controls.Add(this.btn_Consultar_Reembolso);
             this.pnDown_Reembolso.Controls.Add(this.btn_Registrar_Reembolso);
             this.pnDown_Reembolso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnDown_Reembolso.Location = new System.Drawing.Point(0, 1255);
+            this.pnDown_Reembolso.Location = new System.Drawing.Point(0, 1265);
             this.pnDown_Reembolso.MaximumSize = new System.Drawing.Size(310, 240);
             this.pnDown_Reembolso.Name = "pnDown_Reembolso";
             this.pnDown_Reembolso.Size = new System.Drawing.Size(310, 240);
@@ -134,7 +135,7 @@
             this.pnDown_Cliente.Controls.Add(this.btn_Consultar_Cliente);
             this.pnDown_Cliente.Controls.Add(this.btn_Registrar_Cliente);
             this.pnDown_Cliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnDown_Cliente.Location = new System.Drawing.Point(0, 955);
+            this.pnDown_Cliente.Location = new System.Drawing.Point(0, 965);
             this.pnDown_Cliente.MaximumSize = new System.Drawing.Size(310, 240);
             this.pnDown_Cliente.Name = "pnDown_Cliente";
             this.pnDown_Cliente.Size = new System.Drawing.Size(310, 240);
@@ -148,7 +149,7 @@
             this.pnDown_Pago.Controls.Add(this.btn_Consultar_Pago);
             this.pnDown_Pago.Controls.Add(this.btn_Registro_Pago);
             this.pnDown_Pago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnDown_Pago.Location = new System.Drawing.Point(0, 655);
+            this.pnDown_Pago.Location = new System.Drawing.Point(0, 665);
             this.pnDown_Pago.MaximumSize = new System.Drawing.Size(310, 240);
             this.pnDown_Pago.Name = "pnDown_Pago";
             this.pnDown_Pago.Size = new System.Drawing.Size(310, 240);
@@ -162,7 +163,7 @@
             this.pnDown_Factura.Controls.Add(this.btn_Consultar_Factura);
             this.pnDown_Factura.Controls.Add(this.btn_Registro_Factura);
             this.pnDown_Factura.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnDown_Factura.Location = new System.Drawing.Point(0, 355);
+            this.pnDown_Factura.Location = new System.Drawing.Point(0, 365);
             this.pnDown_Factura.MaximumSize = new System.Drawing.Size(310, 240);
             this.pnDown_Factura.Name = "pnDown_Factura";
             this.pnDown_Factura.Size = new System.Drawing.Size(310, 240);
@@ -180,6 +181,17 @@
             this.pnl_User.Name = "pnl_User";
             this.pnl_User.Size = new System.Drawing.Size(336, 191);
             this.pnl_User.TabIndex = 29;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn_Minimizar_Ventana);
+            this.panel1.Controls.Add(this.btn_Cerrar_Ventana);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(336, 45);
+            this.panel1.TabIndex = 31;
             // 
             // lbl_Name_User
             // 
@@ -203,46 +215,24 @@
             this.lbl_Rol_User.Text = "Rol";
             this.lbl_Rol_User.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
+            // pn_Form_Hijo
             // 
-            this.panel1.Controls.Add(this.btn_Minimizar_Ventana);
-            this.panel1.Controls.Add(this.btn_Cerrar_Ventana);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(336, 45);
-            this.panel1.TabIndex = 31;
+            this.pn_Form_Hijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pn_Form_Hijo.Location = new System.Drawing.Point(336, 191);
+            this.pn_Form_Hijo.Name = "pn_Form_Hijo";
+            this.pn_Form_Hijo.Size = new System.Drawing.Size(1433, 789);
+            this.pn_Form_Hijo.TabIndex = 32;
             // 
             // pcb_Tittle
             // 
+            this.pcb_Tittle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pcb_Tittle.Image = ((System.Drawing.Image)(resources.GetObject("pcb_Tittle.Image")));
-            this.pcb_Tittle.Location = new System.Drawing.Point(342, 20);
+            this.pcb_Tittle.Location = new System.Drawing.Point(336, 0);
             this.pcb_Tittle.Name = "pcb_Tittle";
-            this.pcb_Tittle.Size = new System.Drawing.Size(1355, 171);
+            this.pcb_Tittle.Size = new System.Drawing.Size(1433, 191);
             this.pcb_Tittle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcb_Tittle.TabIndex = 4;
             this.pcb_Tittle.TabStop = false;
-            // 
-            // pcb_Profile_User
-            // 
-            this.pcb_Profile_User.Image = ((System.Drawing.Image)(resources.GetObject("pcb_Profile_User.Image")));
-            this.pcb_Profile_User.Location = new System.Drawing.Point(27, 68);
-            this.pcb_Profile_User.Name = "pcb_Profile_User";
-            this.pcb_Profile_User.Size = new System.Drawing.Size(110, 110);
-            this.pcb_Profile_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcb_Profile_User.TabIndex = 30;
-            this.pcb_Profile_User.TabStop = false;
-            // 
-            // pcb_Separator_Profile
-            // 
-            this.pcb_Separator_Profile.Image = ((System.Drawing.Image)(resources.GetObject("pcb_Separator_Profile.Image")));
-            this.pcb_Separator_Profile.Location = new System.Drawing.Point(27, 179);
-            this.pcb_Separator_Profile.Name = "pcb_Separator_Profile";
-            this.pcb_Separator_Profile.Size = new System.Drawing.Size(287, 2);
-            this.pcb_Separator_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcb_Separator_Profile.TabIndex = 28;
-            this.pcb_Separator_Profile.TabStop = false;
             // 
             // btn_Help
             // 
@@ -289,13 +279,11 @@
             // 
             // btn_Eliminar_Reembolso
             // 
-            this.btn_Eliminar_Reembolso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Eliminar_Reembolso.BackColor = System.Drawing.Color.Transparent;
             this.btn_Eliminar_Reembolso.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Eliminar_Reembolso.BorderRadius = 10;
             this.btn_Eliminar_Reembolso.BorderSize = 0;
+            this.btn_Eliminar_Reembolso.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Eliminar_Reembolso.FlatAppearance.BorderSize = 0;
             this.btn_Eliminar_Reembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar_Reembolso.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -313,13 +301,11 @@
             // 
             // btn_Actualizar_Reembolso
             // 
-            this.btn_Actualizar_Reembolso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Actualizar_Reembolso.BackColor = System.Drawing.Color.Transparent;
             this.btn_Actualizar_Reembolso.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Actualizar_Reembolso.BorderRadius = 10;
             this.btn_Actualizar_Reembolso.BorderSize = 0;
+            this.btn_Actualizar_Reembolso.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Actualizar_Reembolso.FlatAppearance.BorderSize = 0;
             this.btn_Actualizar_Reembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Actualizar_Reembolso.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -337,13 +323,11 @@
             // 
             // btn_Consultar_Reembolso
             // 
-            this.btn_Consultar_Reembolso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Consultar_Reembolso.BackColor = System.Drawing.Color.Transparent;
             this.btn_Consultar_Reembolso.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Consultar_Reembolso.BorderRadius = 10;
             this.btn_Consultar_Reembolso.BorderSize = 0;
+            this.btn_Consultar_Reembolso.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Consultar_Reembolso.FlatAppearance.BorderSize = 0;
             this.btn_Consultar_Reembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consultar_Reembolso.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -361,13 +345,11 @@
             // 
             // btn_Registrar_Reembolso
             // 
-            this.btn_Registrar_Reembolso.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Registrar_Reembolso.BackColor = System.Drawing.Color.Transparent;
             this.btn_Registrar_Reembolso.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Registrar_Reembolso.BorderRadius = 10;
             this.btn_Registrar_Reembolso.BorderSize = 0;
+            this.btn_Registrar_Reembolso.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Registrar_Reembolso.FlatAppearance.BorderSize = 0;
             this.btn_Registrar_Reembolso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Registrar_Reembolso.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -396,7 +378,7 @@
             this.btn_MReembolso.ForeColor = System.Drawing.Color.Black;
             this.btn_MReembolso.Image = global::Capa_Presentacion.Properties.Resources.Group_11;
             this.btn_MReembolso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MReembolso.Location = new System.Drawing.Point(0, 1195);
+            this.btn_MReembolso.Location = new System.Drawing.Point(0, 1205);
             this.btn_MReembolso.Name = "btn_MReembolso";
             this.btn_MReembolso.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.btn_MReembolso.Size = new System.Drawing.Size(336, 60);
@@ -407,13 +389,11 @@
             // 
             // btn_Eliminar_Cliente
             // 
-            this.btn_Eliminar_Cliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Eliminar_Cliente.BackColor = System.Drawing.Color.Transparent;
             this.btn_Eliminar_Cliente.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Eliminar_Cliente.BorderRadius = 10;
             this.btn_Eliminar_Cliente.BorderSize = 0;
+            this.btn_Eliminar_Cliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Eliminar_Cliente.FlatAppearance.BorderSize = 0;
             this.btn_Eliminar_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar_Cliente.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -431,13 +411,11 @@
             // 
             // btn_Actualizar_Cliente
             // 
-            this.btn_Actualizar_Cliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Actualizar_Cliente.BackColor = System.Drawing.Color.Transparent;
             this.btn_Actualizar_Cliente.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Actualizar_Cliente.BorderRadius = 10;
             this.btn_Actualizar_Cliente.BorderSize = 0;
+            this.btn_Actualizar_Cliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Actualizar_Cliente.FlatAppearance.BorderSize = 0;
             this.btn_Actualizar_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Actualizar_Cliente.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -455,13 +433,11 @@
             // 
             // btn_Consultar_Cliente
             // 
-            this.btn_Consultar_Cliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Consultar_Cliente.BackColor = System.Drawing.Color.Transparent;
             this.btn_Consultar_Cliente.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Consultar_Cliente.BorderRadius = 10;
             this.btn_Consultar_Cliente.BorderSize = 0;
+            this.btn_Consultar_Cliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Consultar_Cliente.FlatAppearance.BorderSize = 0;
             this.btn_Consultar_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consultar_Cliente.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -479,13 +455,11 @@
             // 
             // btn_Registrar_Cliente
             // 
-            this.btn_Registrar_Cliente.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Registrar_Cliente.BackColor = System.Drawing.Color.Transparent;
             this.btn_Registrar_Cliente.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Registrar_Cliente.BorderRadius = 10;
             this.btn_Registrar_Cliente.BorderSize = 0;
+            this.btn_Registrar_Cliente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Registrar_Cliente.FlatAppearance.BorderSize = 0;
             this.btn_Registrar_Cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Registrar_Cliente.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -514,7 +488,7 @@
             this.btn_MCliente.ForeColor = System.Drawing.Color.Black;
             this.btn_MCliente.Image = global::Capa_Presentacion.Properties.Resources.Group_10;
             this.btn_MCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MCliente.Location = new System.Drawing.Point(0, 895);
+            this.btn_MCliente.Location = new System.Drawing.Point(0, 905);
             this.btn_MCliente.Name = "btn_MCliente";
             this.btn_MCliente.Padding = new System.Windows.Forms.Padding(0, 0, 60, 0);
             this.btn_MCliente.Size = new System.Drawing.Size(336, 60);
@@ -525,13 +499,11 @@
             // 
             // btn_Eliminar_Pago
             // 
-            this.btn_Eliminar_Pago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Eliminar_Pago.BackColor = System.Drawing.Color.Transparent;
             this.btn_Eliminar_Pago.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Eliminar_Pago.BorderRadius = 10;
             this.btn_Eliminar_Pago.BorderSize = 0;
+            this.btn_Eliminar_Pago.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Eliminar_Pago.FlatAppearance.BorderSize = 0;
             this.btn_Eliminar_Pago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar_Pago.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -549,13 +521,11 @@
             // 
             // btn_Actualizar_Pago
             // 
-            this.btn_Actualizar_Pago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Actualizar_Pago.BackColor = System.Drawing.Color.Transparent;
             this.btn_Actualizar_Pago.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Actualizar_Pago.BorderRadius = 10;
             this.btn_Actualizar_Pago.BorderSize = 0;
+            this.btn_Actualizar_Pago.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Actualizar_Pago.FlatAppearance.BorderSize = 0;
             this.btn_Actualizar_Pago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Actualizar_Pago.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -573,13 +543,11 @@
             // 
             // btn_Consultar_Pago
             // 
-            this.btn_Consultar_Pago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Consultar_Pago.BackColor = System.Drawing.Color.Transparent;
             this.btn_Consultar_Pago.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Consultar_Pago.BorderRadius = 10;
             this.btn_Consultar_Pago.BorderSize = 0;
+            this.btn_Consultar_Pago.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Consultar_Pago.FlatAppearance.BorderSize = 0;
             this.btn_Consultar_Pago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consultar_Pago.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -597,13 +565,11 @@
             // 
             // btn_Registro_Pago
             // 
-            this.btn_Registro_Pago.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Registro_Pago.BackColor = System.Drawing.Color.Transparent;
             this.btn_Registro_Pago.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Registro_Pago.BorderRadius = 10;
             this.btn_Registro_Pago.BorderSize = 0;
+            this.btn_Registro_Pago.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Registro_Pago.FlatAppearance.BorderSize = 0;
             this.btn_Registro_Pago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Registro_Pago.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -632,7 +598,7 @@
             this.btn_MPago.ForeColor = System.Drawing.Color.Black;
             this.btn_MPago.Image = global::Capa_Presentacion.Properties.Resources.Group_5;
             this.btn_MPago.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MPago.Location = new System.Drawing.Point(0, 595);
+            this.btn_MPago.Location = new System.Drawing.Point(0, 605);
             this.btn_MPago.Name = "btn_MPago";
             this.btn_MPago.Padding = new System.Windows.Forms.Padding(0, 0, 88, 0);
             this.btn_MPago.Size = new System.Drawing.Size(336, 60);
@@ -643,13 +609,11 @@
             // 
             // btn_Eliminar_Factura
             // 
-            this.btn_Eliminar_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Eliminar_Factura.BackColor = System.Drawing.Color.Transparent;
             this.btn_Eliminar_Factura.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Eliminar_Factura.BorderRadius = 10;
             this.btn_Eliminar_Factura.BorderSize = 0;
+            this.btn_Eliminar_Factura.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Eliminar_Factura.FlatAppearance.BorderSize = 0;
             this.btn_Eliminar_Factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar_Factura.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -657,23 +621,21 @@
             this.btn_Eliminar_Factura.Image = global::Capa_Presentacion.Properties.Resources.Group_25;
             this.btn_Eliminar_Factura.Location = new System.Drawing.Point(0, 180);
             this.btn_Eliminar_Factura.Name = "btn_Eliminar_Factura";
-            this.btn_Eliminar_Factura.Padding = new System.Windows.Forms.Padding(105, 0, 99, 0);
+            this.btn_Eliminar_Factura.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.btn_Eliminar_Factura.Size = new System.Drawing.Size(310, 60);
             this.btn_Eliminar_Factura.TabIndex = 65;
-            this.btn_Eliminar_Factura.Text = "ELIMINAR";
+            this.btn_Eliminar_Factura.Text = "ESTADO FACTURAS";
             this.btn_Eliminar_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Eliminar_Factura.UseVisualStyleBackColor = false;
             this.btn_Eliminar_Factura.Click += new System.EventHandler(this.btn_Eliminar_Factura_Click);
             // 
             // btn_Actualizar_Factura
             // 
-            this.btn_Actualizar_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Actualizar_Factura.BackColor = System.Drawing.Color.Transparent;
             this.btn_Actualizar_Factura.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Actualizar_Factura.BorderRadius = 10;
             this.btn_Actualizar_Factura.BorderSize = 0;
+            this.btn_Actualizar_Factura.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Actualizar_Factura.FlatAppearance.BorderSize = 0;
             this.btn_Actualizar_Factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Actualizar_Factura.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -681,7 +643,7 @@
             this.btn_Actualizar_Factura.Image = global::Capa_Presentacion.Properties.Resources.Group_21;
             this.btn_Actualizar_Factura.Location = new System.Drawing.Point(0, 120);
             this.btn_Actualizar_Factura.Name = "btn_Actualizar_Factura";
-            this.btn_Actualizar_Factura.Padding = new System.Windows.Forms.Padding(85, 0, 75, 0);
+            this.btn_Actualizar_Factura.Padding = new System.Windows.Forms.Padding(80, 0, 55, 0);
             this.btn_Actualizar_Factura.Size = new System.Drawing.Size(310, 60);
             this.btn_Actualizar_Factura.TabIndex = 64;
             this.btn_Actualizar_Factura.Text = "ACTUALIZAR";
@@ -691,13 +653,11 @@
             // 
             // btn_Consultar_Factura
             // 
-            this.btn_Consultar_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Consultar_Factura.BackColor = System.Drawing.Color.Transparent;
             this.btn_Consultar_Factura.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Consultar_Factura.BorderRadius = 10;
             this.btn_Consultar_Factura.BorderSize = 0;
+            this.btn_Consultar_Factura.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Consultar_Factura.FlatAppearance.BorderSize = 0;
             this.btn_Consultar_Factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Consultar_Factura.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -705,23 +665,21 @@
             this.btn_Consultar_Factura.Image = global::Capa_Presentacion.Properties.Resources.Group_16;
             this.btn_Consultar_Factura.Location = new System.Drawing.Point(0, 60);
             this.btn_Consultar_Factura.Name = "btn_Consultar_Factura";
-            this.btn_Consultar_Factura.Padding = new System.Windows.Forms.Padding(90, 0, 84, 0);
+            this.btn_Consultar_Factura.Padding = new System.Windows.Forms.Padding(80, 0, 75, 0);
             this.btn_Consultar_Factura.Size = new System.Drawing.Size(310, 60);
             this.btn_Consultar_Factura.TabIndex = 63;
-            this.btn_Consultar_Factura.Text = "CONSULTAR";
+            this.btn_Consultar_Factura.Text = "FACTURAS";
             this.btn_Consultar_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Consultar_Factura.UseVisualStyleBackColor = false;
             this.btn_Consultar_Factura.Click += new System.EventHandler(this.btn_Consulta_Factura_Click);
             // 
             // btn_Registro_Factura
             // 
-            this.btn_Registro_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Registro_Factura.BackColor = System.Drawing.Color.Transparent;
             this.btn_Registro_Factura.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_Registro_Factura.BorderRadius = 10;
             this.btn_Registro_Factura.BorderSize = 0;
+            this.btn_Registro_Factura.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Registro_Factura.FlatAppearance.BorderSize = 0;
             this.btn_Registro_Factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Registro_Factura.Font = new System.Drawing.Font("IBM Plex Mono", 9F, System.Drawing.FontStyle.Italic);
@@ -729,10 +687,10 @@
             this.btn_Registro_Factura.Image = global::Capa_Presentacion.Properties.Resources.Group_14__1_;
             this.btn_Registro_Factura.Location = new System.Drawing.Point(0, 0);
             this.btn_Registro_Factura.Name = "btn_Registro_Factura";
-            this.btn_Registro_Factura.Padding = new System.Windows.Forms.Padding(90, 0, 80, 0);
+            this.btn_Registro_Factura.Padding = new System.Windows.Forms.Padding(30, 0, 20, 0);
             this.btn_Registro_Factura.Size = new System.Drawing.Size(310, 60);
             this.btn_Registro_Factura.TabIndex = 62;
-            this.btn_Registro_Factura.Text = "REGISTRAR";
+            this.btn_Registro_Factura.Text = "NUEVA FACTURA";
             this.btn_Registro_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Registro_Factura.UseVisualStyleBackColor = false;
             this.btn_Registro_Factura.Click += new System.EventHandler(this.btn_Registro_Factura_Click);
@@ -750,7 +708,7 @@
             this.btn_MFactura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_MFactura.Image = global::Capa_Presentacion.Properties.Resources.Group_1;
             this.btn_MFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MFactura.Location = new System.Drawing.Point(0, 295);
+            this.btn_MFactura.Location = new System.Drawing.Point(0, 305);
             this.btn_MFactura.Name = "btn_MFactura";
             this.btn_MFactura.Padding = new System.Windows.Forms.Padding(0, 0, 50, 0);
             this.btn_MFactura.Size = new System.Drawing.Size(336, 60);
@@ -771,15 +729,15 @@
             this.btn_HOME.Font = new System.Drawing.Font("IOS 15 R Bold", 10F, System.Drawing.FontStyle.Bold);
             this.btn_HOME.ForeColor = System.Drawing.Color.Black;
             this.btn_HOME.Image = global::Capa_Presentacion.Properties.Resources.home_5_line;
-            this.btn_HOME.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_HOME.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_HOME.Location = new System.Drawing.Point(0, 191);
             this.btn_HOME.Name = "btn_HOME";
-            this.btn_HOME.Padding = new System.Windows.Forms.Padding(0, 10, 0, 15);
-            this.btn_HOME.Size = new System.Drawing.Size(336, 104);
+            this.btn_HOME.Padding = new System.Windows.Forms.Padding(16, 10, 100, 15);
+            this.btn_HOME.Size = new System.Drawing.Size(336, 114);
             this.btn_HOME.TabIndex = 60;
             this.btn_HOME.Text = "HOME";
-            this.btn_HOME.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_HOME.UseVisualStyleBackColor = false;
+            this.btn_HOME.Click += new System.EventHandler(this.btn_HOME_Click);
             // 
             // btn_Minimizar_Ventana
             // 
@@ -815,16 +773,38 @@
             this.btn_Cerrar_Ventana.UseVisualStyleBackColor = false;
             this.btn_Cerrar_Ventana.Click += new System.EventHandler(this.btn_Close_Click);
             // 
+            // pcb_Profile_User
+            // 
+            this.pcb_Profile_User.Image = ((System.Drawing.Image)(resources.GetObject("pcb_Profile_User.Image")));
+            this.pcb_Profile_User.Location = new System.Drawing.Point(27, 68);
+            this.pcb_Profile_User.Name = "pcb_Profile_User";
+            this.pcb_Profile_User.Size = new System.Drawing.Size(110, 110);
+            this.pcb_Profile_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_Profile_User.TabIndex = 30;
+            this.pcb_Profile_User.TabStop = false;
+            // 
+            // pcb_Separator_Profile
+            // 
+            this.pcb_Separator_Profile.Image = ((System.Drawing.Image)(resources.GetObject("pcb_Separator_Profile.Image")));
+            this.pcb_Separator_Profile.Location = new System.Drawing.Point(27, 179);
+            this.pcb_Separator_Profile.Name = "pcb_Separator_Profile";
+            this.pcb_Separator_Profile.Size = new System.Drawing.Size(287, 2);
+            this.pcb_Separator_Profile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_Separator_Profile.TabIndex = 28;
+            this.pcb_Separator_Profile.TabStop = false;
+            // 
             // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1713, 962);
+            this.ClientSize = new System.Drawing.Size(1769, 980);
+            this.Controls.Add(this.pn_Form_Hijo);
             this.Controls.Add(this.pcb_Tittle);
             this.Controls.Add(this.panel_Left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1769, 980);
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Menu";
@@ -883,5 +863,6 @@
         private User_Controls.RJButton btn_Cerrar_Ventana;
         private System.Windows.Forms.Panel panel1;
         private User_Controls.RJButton btn_Minimizar_Ventana;
+        private System.Windows.Forms.Panel pn_Form_Hijo;
     }
 }

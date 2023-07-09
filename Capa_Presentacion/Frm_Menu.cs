@@ -1,4 +1,5 @@
-﻿using Capa_Presentacion.Properties;
+﻿using Capa_Presentacion.Modulos._1._Factura;
+using Capa_Presentacion.Properties;
 using Capa_Presentacion.User_Controls;
 using System;
 using System.Drawing;
@@ -14,7 +15,7 @@ namespace Capa_Presentacion
         private bool showPanelPago;
         private bool showPanelCliente;
         private bool showPanelReembolso;
-        
+
         //Confirmaciones de los botones del CRUD
         private bool confirm_button_Create;
         private bool confirm_button_Read;
@@ -22,6 +23,8 @@ namespace Capa_Presentacion
         private bool confirm_button_Delete;
 
         private RJButton current_Button;
+
+        private Form active_Form = null;
         #endregion
 
         public Frm_Menu()
@@ -35,7 +38,7 @@ namespace Capa_Presentacion
             pnDown_Factura.Height = 0;
             pnDown_Pago.Height = 0;
             pnDown_Cliente.Height = 0;
-            pnDown_Reembolso.Height = 0;    
+            pnDown_Reembolso.Height = 0;
         }
 
         #region Confirms de CRUD
@@ -75,7 +78,7 @@ namespace Capa_Presentacion
         {
             public static Color oro = Color.FromArgb(253, 173, 21);
             public static Color gris = Color.FromArgb(191, 191, 191);
-            public static Color smoke_gray = Color.FromArgb(64,64,64);
+            public static Color smoke_gray = Color.FromArgb(64, 64, 64);
             public static Color mostaza = Color.FromArgb(158, 121, 51);
         }
         #endregion
@@ -106,11 +109,11 @@ namespace Capa_Presentacion
         private void btn_MCliente_Click(object sender, EventArgs e)
         {
             showPanelFactura = false;
-            showPanelPago= false;
+            showPanelPago = false;
             showPanelReembolso = false;
 
             showPanelCliente = !showPanelCliente;
-            DeslizarMenus() ;
+            DeslizarMenus();
             Reset_Colors_Buttons();
         }
 
@@ -139,7 +142,7 @@ namespace Capa_Presentacion
             {
                 btn_MFactura.Image = Resources.Group_1;
                 btn_MFactura.BackColor = Color.Transparent;
-                pnDown_Factura.Height=0;
+                pnDown_Factura.Height = 0;
             }
             if (showPanelPago)
             {
@@ -151,7 +154,7 @@ namespace Capa_Presentacion
             {
                 btn_MPago.Image = Resources.Group_5;
                 btn_MPago.BackColor = Color.Transparent;
-                pnDown_Pago.Height=0;
+                pnDown_Pago.Height = 0;
             }
             if (showPanelCliente)
             {
@@ -163,9 +166,9 @@ namespace Capa_Presentacion
             {
                 btn_MCliente.Image = Resources.Group_10;
                 btn_MCliente.BackColor = Color.Transparent;
-                pnDown_Cliente.Height=0;
+                pnDown_Cliente.Height = 0;
             }
-            if(showPanelReembolso)
+            if (showPanelReembolso)
             {
                 btn_MReembolso.Image = Resources.Group_11__1_;
                 btn_MReembolso.BackColor = Colores_RGB.gris;
@@ -173,9 +176,9 @@ namespace Capa_Presentacion
             }
             else
             {
-                btn_MReembolso.Image= Resources.Group_11;
+                btn_MReembolso.Image = Resources.Group_11;
                 btn_MReembolso.BackColor = Color.Transparent;
-                pnDown_Reembolso.Height=0;
+                pnDown_Reembolso.Height = 0;
             }
         }
         #endregion
@@ -200,6 +203,8 @@ namespace Capa_Presentacion
         {
             confirm_Create();
             Atenuar_Opc_Modulo(btn_Registro_Factura);
+            AbrirFormularioHijo(new Frm_MFactura_Registro());
+
         }
 
         private void btn_Consulta_Factura_Click(object sender, EventArgs e)
@@ -220,7 +225,7 @@ namespace Capa_Presentacion
             Atenuar_Opc_Modulo(btn_Eliminar_Factura);
         }
         #endregion
-        
+
         #region Restaura el color e icono a su estado pasivo
         private void Reset_Colors_Buttons()
         {
@@ -365,7 +370,7 @@ namespace Capa_Presentacion
         }
         private void btn_Consultar_Reembolso_Click(object sender, EventArgs e)
         {
-            confirm_Read() ;
+            confirm_Read();
             Atenuar_Opc_Modulo(btn_Consultar_Reembolso);
         }
         private void btn_Actualizar_Reembolso_Click(object sender, EventArgs e)
@@ -386,5 +391,55 @@ namespace Capa_Presentacion
             WindowState = FormWindowState.Minimized;
         }
         #endregion
+
+        #region Llama a un formulario hijo, dentro del formulario actual (Padre)
+        private void AbrirFormularioHijo(Form hijo)
+        {
+            //Cuando se lllama al método, si hay un formulario ejecutandose en ese momento, entonces lo cierra.
+            if (active_Form != null)
+            {
+                active_Form.Close();
+            }
+
+            active_Form = hijo;
+            hijo.TopLevel = false;
+            hijo.FormBorderStyle = FormBorderStyle.None;
+            hijo.Dock= DockStyle.Fill;
+            pn_Form_Hijo.Controls.Add(hijo);
+            pn_Form_Hijo.Tag = hijo;
+            hijo.Show();
+        }
+        #endregion
+
+        private void btn_HOME_Click(object sender, EventArgs e)
+        {
+            if (active_Form != null)
+            {
+                active_Form.Close();
+            }
+            Restore_Paneles_Modulos();
+            DeslizarMenus();
+            Reset_Colors_Buttons();
+            hidePanels();
+        }
+
+        private void Restore_Paneles_Modulos()
+        {
+            if (showPanelFactura)
+            {
+                showPanelFactura = !showPanelFactura;
+            }else if (showPanelPago)
+            {
+                showPanelPago = !showPanelPago;
+            }
+            else if (showPanelCliente)
+            {
+                showPanelCliente = !showPanelCliente;
+            }
+            else if (showPanelReembolso)
+            {
+                showPanelReembolso = !showPanelReembolso;
+            }
+        }
     }
 }

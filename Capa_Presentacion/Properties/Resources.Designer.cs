@@ -83,6 +83,26 @@ namespace Capa_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap broom_line {
+            get {
+                object obj = ResourceManager.GetObject("broom_line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CENTER__1_ {
+            get {
+                object obj = ResourceManager.GetObject("CENTER (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_circle_fill {
             get {
                 object obj = ResourceManager.GetObject("close_circle_fill", resourceCulture);
@@ -343,6 +363,36 @@ namespace Capa_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Line_1 {
+            get {
+                object obj = ResourceManager.GetObject("Line 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_2 {
+            get {
+                object obj = ResourceManager.GetObject("Line 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_21 {
+            get {
+                object obj = ResourceManager.GetObject("Line 21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minimize_svgrepo_com__Custom_ {
             get {
                 object obj = ResourceManager.GetObject("minimize-svgrepo-com (Custom)", resourceCulture);
@@ -356,6 +406,26 @@ namespace Capa_Presentacion.Properties {
         internal static System.Drawing.Bitmap pencil_line__1_ {
             get {
                 object obj = ResourceManager.GetObject("pencil_line (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print {
+            get {
+                object obj = ResourceManager.GetObject("print", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Register_ButtonIcon {
+            get {
+                object obj = ResourceManager.GetObject("Register_ButtonIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
