@@ -30,14 +30,13 @@
         {
             this.pn_Fondo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
             this.txt_Fecha = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.pcb_Line = new System.Windows.Forms.PictureBox();
-            this.btn_Cerrar_Ventana = new Capa_Presentacion.User_Controls.RJButton();
             this.btn_Clean = new MaterialSkin.Controls.MaterialButton();
             this.btn_Print = new MaterialSkin.Controls.MaterialButton();
             this.btn_Registrar = new MaterialSkin.Controls.MaterialButton();
-            this.lbl_Total_a_Pagar = new Capa_Presentacion.Gradient_Label_Bounds();
-            this.lbl_Vuelto = new Capa_Presentacion.Gradient_Label_Bounds();
             this.txt_Pago = new MaterialSkin.Controls.MaterialTextBox2();
             this.txt_Nombre_Vendedor = new MaterialSkin.Controls.MaterialTextBox();
             this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
@@ -46,31 +45,32 @@
             this.txt_Nombre_Cliente = new MaterialSkin.Controls.MaterialTextBox();
             this.txt_Cedula_Encontrada = new MaterialSkin.Controls.MaterialTextBox();
             this.txtCliente_Cedula = new MaterialSkin.Controls.MaterialTextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.dtgV_Factura = new System.Windows.Forms.DataGridView();
+            this.lbl_Total_Pago_Factura = new System.Windows.Forms.Label();
+            this.lbl_Vuelto_Factura = new System.Windows.Forms.Label();
+            this.lbl_Pago_Factura = new System.Windows.Forms.Label();
+            this.lbl_Nombre_Encargado = new System.Windows.Forms.Label();
+            this.lbl_Metodo_Pago = new System.Windows.Forms.Label();
+            this.lbl_ID_Factura = new System.Windows.Forms.Label();
+            this.lbl_Fecha_Factura = new System.Windows.Forms.Label();
+            this.lbl_Telefono = new System.Windows.Forms.Label();
+            this.lbl_Nombre = new System.Windows.Forms.Label();
+            this.lbl_Cedula = new System.Windows.Forms.Label();
             this.lbl_Cliente = new System.Windows.Forms.Label();
             this.lbl_TOP = new System.Windows.Forms.Label();
+            this.btn_Cerrar_Ventana = new Capa_Presentacion.User_Controls.RJButton();
             this.pn_Fondo.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Line)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgV_Factura)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_Fondo
             // 
+            this.pn_Fondo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pn_Fondo.BackgroundImage = global::Capa_Presentacion.Properties.Resources.CENTER__1_;
             this.pn_Fondo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pn_Fondo.Controls.Add(this.panel1);
-            this.pn_Fondo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_Fondo.Location = new System.Drawing.Point(0, 0);
             this.pn_Fondo.Name = "pn_Fondo";
             this.pn_Fondo.Size = new System.Drawing.Size(1433, 789);
@@ -78,15 +78,16 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.materialTextBox22);
+            this.panel1.Controls.Add(this.materialTextBox21);
             this.panel1.Controls.Add(this.txt_Fecha);
             this.panel1.Controls.Add(this.pcb_Line);
             this.panel1.Controls.Add(this.btn_Cerrar_Ventana);
             this.panel1.Controls.Add(this.btn_Clean);
             this.panel1.Controls.Add(this.btn_Print);
             this.panel1.Controls.Add(this.btn_Registrar);
-            this.panel1.Controls.Add(this.lbl_Total_a_Pagar);
-            this.panel1.Controls.Add(this.lbl_Vuelto);
             this.panel1.Controls.Add(this.txt_Pago);
             this.panel1.Controls.Add(this.txt_Nombre_Vendedor);
             this.panel1.Controls.Add(this.materialTextBox1);
@@ -95,25 +96,85 @@
             this.panel1.Controls.Add(this.txt_Nombre_Cliente);
             this.panel1.Controls.Add(this.txt_Cedula_Encontrada);
             this.panel1.Controls.Add(this.txtCliente_Cedula);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.dtgV_Factura);
+            this.panel1.Controls.Add(this.lbl_Total_Pago_Factura);
+            this.panel1.Controls.Add(this.lbl_Vuelto_Factura);
+            this.panel1.Controls.Add(this.lbl_Pago_Factura);
+            this.panel1.Controls.Add(this.lbl_Nombre_Encargado);
+            this.panel1.Controls.Add(this.lbl_Metodo_Pago);
+            this.panel1.Controls.Add(this.lbl_ID_Factura);
+            this.panel1.Controls.Add(this.lbl_Fecha_Factura);
+            this.panel1.Controls.Add(this.lbl_Telefono);
+            this.panel1.Controls.Add(this.lbl_Nombre);
+            this.panel1.Controls.Add(this.lbl_Cedula);
             this.panel1.Controls.Add(this.lbl_Cliente);
             this.panel1.Controls.Add(this.lbl_TOP);
-            this.panel1.Location = new System.Drawing.Point(21, 21);
+            this.panel1.Location = new System.Drawing.Point(24, 23);
             this.panel1.MinimumSize = new System.Drawing.Size(1375, 720);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1375, 720);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // materialTextBox22
+            // 
+            this.materialTextBox22.AnimateReadOnly = false;
+            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox22.Depth = 0;
+            this.materialTextBox22.Enabled = false;
+            this.materialTextBox22.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox22.HideSelection = true;
+            this.materialTextBox22.LeadingIcon = global::Capa_Presentacion.Properties.Resources.dollar_green;
+            this.materialTextBox22.Location = new System.Drawing.Point(1063, 212);
+            this.materialTextBox22.MaxLength = 32767;
+            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox22.Name = "materialTextBox22";
+            this.materialTextBox22.PasswordChar = '\0';
+            this.materialTextBox22.PrefixSuffixText = null;
+            this.materialTextBox22.ReadOnly = false;
+            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox22.SelectedText = "";
+            this.materialTextBox22.SelectionLength = 0;
+            this.materialTextBox22.SelectionStart = 0;
+            this.materialTextBox22.ShortcutsEnabled = true;
+            this.materialTextBox22.Size = new System.Drawing.Size(268, 36);
+            this.materialTextBox22.TabIndex = 36;
+            this.materialTextBox22.TabStop = false;
+            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox22.TrailingIcon = null;
+            this.materialTextBox22.UseSystemPasswordChar = false;
+            this.materialTextBox22.UseTallSize = false;
+            // 
+            // materialTextBox21
+            // 
+            this.materialTextBox21.AnimateReadOnly = false;
+            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox21.Depth = 0;
+            this.materialTextBox21.Enabled = false;
+            this.materialTextBox21.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox21.HideSelection = true;
+            this.materialTextBox21.LeadingIcon = global::Capa_Presentacion.Properties.Resources.dollar_yellow__Custom_;
+            this.materialTextBox21.Location = new System.Drawing.Point(1063, 153);
+            this.materialTextBox21.MaxLength = 32767;
+            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox21.Name = "materialTextBox21";
+            this.materialTextBox21.PasswordChar = '\0';
+            this.materialTextBox21.PrefixSuffixText = null;
+            this.materialTextBox21.ReadOnly = false;
+            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox21.SelectedText = "";
+            this.materialTextBox21.SelectionLength = 0;
+            this.materialTextBox21.SelectionStart = 0;
+            this.materialTextBox21.ShortcutsEnabled = true;
+            this.materialTextBox21.Size = new System.Drawing.Size(268, 36);
+            this.materialTextBox21.TabIndex = 35;
+            this.materialTextBox21.TabStop = false;
+            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox21.TrailingIcon = null;
+            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.materialTextBox21.UseTallSize = false;
             // 
             // txt_Fecha
             // 
@@ -172,23 +233,6 @@
             this.pcb_Line.TabIndex = 33;
             this.pcb_Line.TabStop = false;
             // 
-            // btn_Cerrar_Ventana
-            // 
-            this.btn_Cerrar_Ventana.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Cerrar_Ventana.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Cerrar_Ventana.BorderRadius = 10;
-            this.btn_Cerrar_Ventana.BorderSize = 0;
-            this.btn_Cerrar_Ventana.FlatAppearance.BorderSize = 0;
-            this.btn_Cerrar_Ventana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cerrar_Ventana.ForeColor = System.Drawing.Color.White;
-            this.btn_Cerrar_Ventana.Image = global::Capa_Presentacion.Properties.Resources.close_circle_fill;
-            this.btn_Cerrar_Ventana.Location = new System.Drawing.Point(1315, 11);
-            this.btn_Cerrar_Ventana.Name = "btn_Cerrar_Ventana";
-            this.btn_Cerrar_Ventana.Size = new System.Drawing.Size(57, 60);
-            this.btn_Cerrar_Ventana.TabIndex = 32;
-            this.btn_Cerrar_Ventana.UseVisualStyleBackColor = false;
-            this.btn_Cerrar_Ventana.Click += new System.EventHandler(this.btn_Cerrar_Ventana_Click);
-            // 
             // btn_Clean
             // 
             this.btn_Clean.AutoSize = false;
@@ -240,7 +284,7 @@
             this.btn_Registrar.Depth = 0;
             this.btn_Registrar.Font = new System.Drawing.Font("DM Mono Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Registrar.HighEmphasis = true;
-            this.btn_Registrar.Icon = global::Capa_Presentacion.Properties.Resources.Register_ButtonIcon;
+            this.btn_Registrar.Icon = global::Capa_Presentacion.Properties.Resources.cash_out_svgrepo_com__Custom_;
             this.btn_Registrar.Location = new System.Drawing.Point(55, 398);
             this.btn_Registrar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btn_Registrar.MouseState = MaterialSkin.MouseState.HOVER;
@@ -253,41 +297,9 @@
             this.btn_Registrar.UseAccentColor = true;
             this.btn_Registrar.UseVisualStyleBackColor = true;
             // 
-            // lbl_Total_a_Pagar
-            // 
-            this.lbl_Total_a_Pagar.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Total_a_Pagar.BorderRadius = 5;
-            this.lbl_Total_a_Pagar.BorderSize = 0;
-            this.lbl_Total_a_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_Total_a_Pagar.Font = new System.Drawing.Font("IBM Plex Mono", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Total_a_Pagar.ForeColor = System.Drawing.Color.White;
-            this.lbl_Total_a_Pagar.LeftColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(215)))), ((int)(((byte)(169)))));
-            this.lbl_Total_a_Pagar.Location = new System.Drawing.Point(1063, 212);
-            this.lbl_Total_a_Pagar.Name = "lbl_Total_a_Pagar";
-            this.lbl_Total_a_Pagar.RightColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(215)))), ((int)(((byte)(169)))));
-            this.lbl_Total_a_Pagar.Size = new System.Drawing.Size(268, 36);
-            this.lbl_Total_a_Pagar.TabIndex = 26;
-            this.lbl_Total_a_Pagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl_Vuelto
-            // 
-            this.lbl_Vuelto.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_Vuelto.BorderRadius = 5;
-            this.lbl_Vuelto.BorderSize = 0;
-            this.lbl_Vuelto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbl_Vuelto.Font = new System.Drawing.Font("IBM Plex Mono", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Vuelto.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl_Vuelto.LeftColor = System.Drawing.Color.Transparent;
-            this.lbl_Vuelto.Location = new System.Drawing.Point(1063, 153);
-            this.lbl_Vuelto.Name = "lbl_Vuelto";
-            this.lbl_Vuelto.RightColor = System.Drawing.Color.Transparent;
-            this.lbl_Vuelto.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lbl_Vuelto.Size = new System.Drawing.Size(268, 36);
-            this.lbl_Vuelto.TabIndex = 25;
-            this.lbl_Vuelto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // txt_Pago
             // 
+            this.txt_Pago.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_Pago.AnimateReadOnly = false;
             this.txt_Pago.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txt_Pago.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -295,7 +307,7 @@
             this.txt_Pago.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txt_Pago.HideSelection = true;
             this.txt_Pago.Hint = "Ingrese la cantidad del Pago";
-            this.txt_Pago.LeadingIcon = null;
+            this.txt_Pago.LeadingIcon = global::Capa_Presentacion.Properties.Resources.dollar_blue;
             this.txt_Pago.Location = new System.Drawing.Point(1063, 94);
             this.txt_Pago.MaxLength = 32767;
             this.txt_Pago.MouseState = MaterialSkin.MouseState.OUT;
@@ -470,139 +482,146 @@
             this.txtCliente_Cedula.TrailingIcon = null;
             this.txtCliente_Cedula.UseTallSize = false;
             // 
-            // dataGridView1
+            // dtgV_Factura
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 459);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(1276, 237);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1276, 237);
-            this.dataGridView1.TabIndex = 15;
+            this.dtgV_Factura.AllowUserToAddRows = false;
+            this.dtgV_Factura.AllowUserToDeleteRows = false;
+            this.dtgV_Factura.AllowUserToResizeColumns = false;
+            this.dtgV_Factura.AllowUserToResizeRows = false;
+            this.dtgV_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgV_Factura.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.dtgV_Factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgV_Factura.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dtgV_Factura.Location = new System.Drawing.Point(55, 459);
+            this.dtgV_Factura.MaximumSize = new System.Drawing.Size(1276, 237);
+            this.dtgV_Factura.Name = "dtgV_Factura";
+            this.dtgV_Factura.RowHeadersWidth = 62;
+            this.dtgV_Factura.RowTemplate.Height = 28;
+            this.dtgV_Factura.Size = new System.Drawing.Size(1276, 237);
+            this.dtgV_Factura.TabIndex = 15;
             // 
-            // label12
+            // lbl_Total_Pago_Factura
             // 
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(921, 216);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(136, 29);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Neto a Pagar:  $";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Total_Pago_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_Total_Pago_Factura.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Total_Pago_Factura.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Total_Pago_Factura.Location = new System.Drawing.Point(921, 216);
+            this.lbl_Total_Pago_Factura.Name = "lbl_Total_Pago_Factura";
+            this.lbl_Total_Pago_Factura.Size = new System.Drawing.Size(136, 29);
+            this.lbl_Total_Pago_Factura.TabIndex = 11;
+            this.lbl_Total_Pago_Factura.Text = "Neto a Pagar:";
+            this.lbl_Total_Pago_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label11
+            // lbl_Vuelto_Factura
             // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(921, 157);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 29);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Devolver:          $";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Vuelto_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_Vuelto_Factura.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Vuelto_Factura.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Vuelto_Factura.Location = new System.Drawing.Point(921, 157);
+            this.lbl_Vuelto_Factura.Name = "lbl_Vuelto_Factura";
+            this.lbl_Vuelto_Factura.Size = new System.Drawing.Size(136, 29);
+            this.lbl_Vuelto_Factura.TabIndex = 10;
+            this.lbl_Vuelto_Factura.Text = "Devolver:";
+            this.lbl_Vuelto_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label10
+            // lbl_Pago_Factura
             // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(921, 98);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 29);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Pagó con:         $";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Pago_Factura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_Pago_Factura.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Pago_Factura.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Pago_Factura.Location = new System.Drawing.Point(921, 98);
+            this.lbl_Pago_Factura.Name = "lbl_Pago_Factura";
+            this.lbl_Pago_Factura.Size = new System.Drawing.Size(136, 29);
+            this.lbl_Pago_Factura.TabIndex = 9;
+            this.lbl_Pago_Factura.Text = "Pagó con:";
+            this.lbl_Pago_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // lbl_Nombre_Encargado
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(405, 278);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(196, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Nombre del Encargado:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Nombre_Encargado.AutoSize = true;
+            this.lbl_Nombre_Encargado.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Nombre_Encargado.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Nombre_Encargado.Location = new System.Drawing.Point(405, 278);
+            this.lbl_Nombre_Encargado.Name = "lbl_Nombre_Encargado";
+            this.lbl_Nombre_Encargado.Size = new System.Drawing.Size(196, 22);
+            this.lbl_Nombre_Encargado.TabIndex = 8;
+            this.lbl_Nombre_Encargado.Text = "Nombre del Encargado:";
+            this.lbl_Nombre_Encargado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
+            // lbl_Metodo_Pago
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(405, 219);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 22);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Método de Pago:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Metodo_Pago.AutoSize = true;
+            this.lbl_Metodo_Pago.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Metodo_Pago.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Metodo_Pago.Location = new System.Drawing.Point(405, 219);
+            this.lbl_Metodo_Pago.Name = "lbl_Metodo_Pago";
+            this.lbl_Metodo_Pago.Size = new System.Drawing.Size(143, 22);
+            this.lbl_Metodo_Pago.TabIndex = 7;
+            this.lbl_Metodo_Pago.Text = "Método de Pago:";
+            this.lbl_Metodo_Pago.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // lbl_ID_Factura
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(405, 101);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 22);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Identificador de Factura:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_ID_Factura.AutoSize = true;
+            this.lbl_ID_Factura.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_ID_Factura.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ID_Factura.Location = new System.Drawing.Point(405, 101);
+            this.lbl_ID_Factura.Name = "lbl_ID_Factura";
+            this.lbl_ID_Factura.Size = new System.Drawing.Size(205, 22);
+            this.lbl_ID_Factura.TabIndex = 6;
+            this.lbl_ID_Factura.Text = "Identificador de Factura:";
+            this.lbl_ID_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label6
+            // lbl_Fecha_Factura
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(405, 160);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 22);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Fecha de Facturación:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Fecha_Factura.AutoSize = true;
+            this.lbl_Fecha_Factura.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Fecha_Factura.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Fecha_Factura.Location = new System.Drawing.Point(405, 160);
+            this.lbl_Fecha_Factura.Name = "lbl_Fecha_Factura";
+            this.lbl_Fecha_Factura.Size = new System.Drawing.Size(188, 22);
+            this.lbl_Fecha_Factura.TabIndex = 5;
+            this.lbl_Fecha_Factura.Text = "Fecha de Facturación:";
+            this.lbl_Fecha_Factura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label5
+            // lbl_Telefono
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(51, 278);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 22);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Teléfono:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Telefono.AutoSize = true;
+            this.lbl_Telefono.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Telefono.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Telefono.Location = new System.Drawing.Point(51, 278);
+            this.lbl_Telefono.Name = "lbl_Telefono";
+            this.lbl_Telefono.Size = new System.Drawing.Size(82, 22);
+            this.lbl_Telefono.TabIndex = 4;
+            this.lbl_Telefono.Text = "Teléfono:";
+            this.lbl_Telefono.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label4
+            // lbl_Nombre
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(51, 219);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Nombre:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Nombre.AutoSize = true;
+            this.lbl_Nombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Nombre.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Nombre.Location = new System.Drawing.Point(51, 219);
+            this.lbl_Nombre.Name = "lbl_Nombre";
+            this.lbl_Nombre.Size = new System.Drawing.Size(78, 22);
+            this.lbl_Nombre.TabIndex = 3;
+            this.lbl_Nombre.Text = "Nombre:";
+            this.lbl_Nombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // lbl_Cedula
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(51, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Cédula:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_Cedula.AutoSize = true;
+            this.lbl_Cedula.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Cedula.Font = new System.Drawing.Font("IOS 15 SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Cedula.Location = new System.Drawing.Point(51, 160);
+            this.lbl_Cedula.Name = "lbl_Cedula";
+            this.lbl_Cedula.Size = new System.Drawing.Size(71, 22);
+            this.lbl_Cedula.TabIndex = 2;
+            this.lbl_Cedula.Text = "Cédula:";
+            this.lbl_Cedula.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_Cliente
             // 
@@ -630,6 +649,23 @@
             this.lbl_TOP.Text = "NUEVA FACTURA";
             this.lbl_TOP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // btn_Cerrar_Ventana
+            // 
+            this.btn_Cerrar_Ventana.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Cerrar_Ventana.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Cerrar_Ventana.BorderRadius = 10;
+            this.btn_Cerrar_Ventana.BorderSize = 0;
+            this.btn_Cerrar_Ventana.FlatAppearance.BorderSize = 0;
+            this.btn_Cerrar_Ventana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cerrar_Ventana.ForeColor = System.Drawing.Color.White;
+            this.btn_Cerrar_Ventana.Image = global::Capa_Presentacion.Properties.Resources.close_circle_fill;
+            this.btn_Cerrar_Ventana.Location = new System.Drawing.Point(1315, 11);
+            this.btn_Cerrar_Ventana.Name = "btn_Cerrar_Ventana";
+            this.btn_Cerrar_Ventana.Size = new System.Drawing.Size(57, 60);
+            this.btn_Cerrar_Ventana.TabIndex = 32;
+            this.btn_Cerrar_Ventana.UseVisualStyleBackColor = false;
+            this.btn_Cerrar_Ventana.Click += new System.EventHandler(this.btn_Cerrar_Ventana_Click);
+            // 
             // Frm_MFactura_Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -647,7 +683,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Line)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgV_Factura)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -656,18 +692,18 @@
         private System.Windows.Forms.Panel pn_Fondo;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_TOP;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_Telefono;
+        private System.Windows.Forms.Label lbl_Nombre;
+        private System.Windows.Forms.Label lbl_Cedula;
         private System.Windows.Forms.Label lbl_Cliente;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lbl_Vuelto_Factura;
+        private System.Windows.Forms.Label lbl_Pago_Factura;
+        private System.Windows.Forms.Label lbl_Nombre_Encargado;
+        private System.Windows.Forms.Label lbl_Metodo_Pago;
+        private System.Windows.Forms.Label lbl_ID_Factura;
+        private System.Windows.Forms.Label lbl_Fecha_Factura;
+        private System.Windows.Forms.Label lbl_Total_Pago_Factura;
+        private System.Windows.Forms.DataGridView dtgV_Factura;
         private MaterialSkin.Controls.MaterialTextBox txt_Telefono_Cliente;
         private MaterialSkin.Controls.MaterialTextBox txt_Nombre_Cliente;
         private MaterialSkin.Controls.MaterialTextBox txt_Cedula_Encontrada;
@@ -676,13 +712,13 @@
         private MaterialSkin.Controls.MaterialComboBox cmb_Metodo_Pago;
         private MaterialSkin.Controls.MaterialTextBox2 txt_Pago;
         private MaterialSkin.Controls.MaterialTextBox txtCliente_Cedula;
-        private Gradient_Label_Bounds lbl_Total_a_Pagar;
-        private Gradient_Label_Bounds lbl_Vuelto;
         private MaterialSkin.Controls.MaterialButton btn_Clean;
         private MaterialSkin.Controls.MaterialButton btn_Print;
         private MaterialSkin.Controls.MaterialButton btn_Registrar;
         private User_Controls.RJButton btn_Cerrar_Ventana;
         private System.Windows.Forms.PictureBox pcb_Line;
         private MaterialSkin.Controls.MaterialMaskedTextBox txt_Fecha;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
     }
 }
