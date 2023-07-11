@@ -17,6 +17,7 @@ namespace Capa_Presentacion.Modulos._1._Factura
         {
             InitializeComponent();
             Paint_Button_Options();
+            
         }
 
         private void Paint_Button_Options()

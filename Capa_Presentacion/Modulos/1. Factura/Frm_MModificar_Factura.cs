@@ -202,5 +202,6 @@ namespace Capa_Presentacion.Modulos._1._Factura
         {
             Invalidate();
         }
+
     }
 }

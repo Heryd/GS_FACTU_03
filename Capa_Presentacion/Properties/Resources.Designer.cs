@@ -83,6 +83,16 @@ namespace Capa_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _9_a_Read_Selected {
+            get {
+                object obj = ResourceManager.GetObject("9.a Read_Selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap broom_line {
             get {
                 object obj = ResourceManager.GetObject("broom_line", resourceCulture);
@@ -216,6 +226,26 @@ namespace Capa_Presentacion.Properties {
         internal static System.Drawing.Bitmap btn_nuevo_registro_background_white {
             get {
                 object obj = ResourceManager.GetObject("btn_nuevo_registro_background_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_blue {
+            get {
+                object obj = ResourceManager.GetObject("calendar_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_svgrepo_com {
+            get {
+                object obj = ResourceManager.GetObject("calendar-svgrepo-com", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,6 +676,16 @@ namespace Capa_Presentacion.Properties {
         internal static System.Drawing.Bitmap Register_ButtonIcon {
             get {
                 object obj = ResourceManager.GetObject("Register_ButtonIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_background_white {
+            get {
+                object obj = ResourceManager.GetObject("search_background_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

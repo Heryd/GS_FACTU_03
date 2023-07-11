@@ -30,18 +30,19 @@
         {
             this.pn_container_Extern = new System.Windows.Forms.Panel();
             this.pn_container = new System.Windows.Forms.Panel();
+            this.btn_refresh = new MaterialSkin.Controls.MaterialFloatingActionButton();
             this.btn_Cerrar_Ventana = new Capa_Presentacion.User_Controls.RJButton();
-            this.materialFloatingActionButton1 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialComboBox3 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialComboBox2 = new MaterialSkin.Controls.MaterialComboBox();
-            this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
-            this.rjButton1 = new Capa_Presentacion.User_Controls.RJButton();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
+            this.btn_search = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.cmb_Filtro_Pago = new MaterialSkin.Controls.MaterialComboBox();
+            this.cmb_Filtro_Cliente = new MaterialSkin.Controls.MaterialComboBox();
+            this.cmb_filtro_Factura = new MaterialSkin.Controls.MaterialComboBox();
+            this.txt_busqueda = new MaterialSkin.Controls.MaterialTextBox();
             this.btn_Eliminar = new MaterialSkin.Controls.MaterialButton();
             this.btn_Editar = new MaterialSkin.Controls.MaterialButton();
             this.dtgv_Factura = new System.Windows.Forms.DataGridView();
             this.pcb_Line = new System.Windows.Forms.PictureBox();
             this.lbl_TOP = new System.Windows.Forms.Label();
+            this.divider = new MaterialSkin.Controls.MaterialDivider();
             this.pn_container_Extern.SuspendLayout();
             this.pn_container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Factura)).BeginInit();
@@ -63,13 +64,14 @@
             // pn_container
             // 
             this.pn_container.BackColor = System.Drawing.Color.White;
+            this.pn_container.Controls.Add(this.divider);
+            this.pn_container.Controls.Add(this.btn_refresh);
             this.pn_container.Controls.Add(this.btn_Cerrar_Ventana);
-            this.pn_container.Controls.Add(this.materialFloatingActionButton1);
-            this.pn_container.Controls.Add(this.materialComboBox3);
-            this.pn_container.Controls.Add(this.materialComboBox2);
-            this.pn_container.Controls.Add(this.materialComboBox1);
-            this.pn_container.Controls.Add(this.rjButton1);
-            this.pn_container.Controls.Add(this.materialTextBox1);
+            this.pn_container.Controls.Add(this.btn_search);
+            this.pn_container.Controls.Add(this.cmb_Filtro_Pago);
+            this.pn_container.Controls.Add(this.cmb_Filtro_Cliente);
+            this.pn_container.Controls.Add(this.cmb_filtro_Factura);
+            this.pn_container.Controls.Add(this.txt_busqueda);
             this.pn_container.Controls.Add(this.btn_Eliminar);
             this.pn_container.Controls.Add(this.btn_Editar);
             this.pn_container.Controls.Add(this.dtgv_Factura);
@@ -80,6 +82,19 @@
             this.pn_container.Name = "pn_container";
             this.pn_container.Size = new System.Drawing.Size(1375, 720);
             this.pn_container.TabIndex = 0;
+            // 
+            // btn_refresh
+            // 
+            this.btn_refresh.AnimateShowHideButton = true;
+            this.btn_refresh.Depth = 0;
+            this.btn_refresh.Icon = global::Capa_Presentacion.Properties.Resources.Refresh;
+            this.btn_refresh.Location = new System.Drawing.Point(443, 97);
+            this.btn_refresh.Mini = true;
+            this.btn_refresh.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(40, 40);
+            this.btn_refresh.TabIndex = 46;
+            this.btn_refresh.UseVisualStyleBackColor = true;
             // 
             // btn_Cerrar_Ventana
             // 
@@ -98,125 +113,123 @@
             this.btn_Cerrar_Ventana.UseVisualStyleBackColor = false;
             this.btn_Cerrar_Ventana.Click += new System.EventHandler(this.btn_Cerrar_Ventana_Click);
             // 
-            // materialFloatingActionButton1
+            // btn_search
             // 
-            this.materialFloatingActionButton1.AnimateShowHideButton = true;
-            this.materialFloatingActionButton1.Depth = 0;
-            this.materialFloatingActionButton1.Icon = global::Capa_Presentacion.Properties.Resources.Refresh;
-            this.materialFloatingActionButton1.Location = new System.Drawing.Point(447, 97);
-            this.materialFloatingActionButton1.Mini = true;
-            this.materialFloatingActionButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton1.Name = "materialFloatingActionButton1";
-            this.materialFloatingActionButton1.Size = new System.Drawing.Size(40, 40);
-            this.materialFloatingActionButton1.TabIndex = 44;
-            this.materialFloatingActionButton1.Text = "materialFloatingActionButton1";
-            this.materialFloatingActionButton1.UseVisualStyleBackColor = true;
+            this.btn_search.AnimateShowHideButton = true;
+            this.btn_search.Depth = 0;
+            this.btn_search.Icon = global::Capa_Presentacion.Properties.Resources._9_a_Read_Selected;
+            this.btn_search.Location = new System.Drawing.Point(391, 97);
+            this.btn_search.Mini = true;
+            this.btn_search.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(40, 40);
+            this.btn_search.TabIndex = 44;
+            this.btn_search.UseVisualStyleBackColor = true;
             // 
-            // materialComboBox3
+            // cmb_Filtro_Pago
             // 
-            this.materialComboBox3.AutoResize = false;
-            this.materialComboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox3.Depth = 0;
-            this.materialComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox3.DropDownHeight = 118;
-            this.materialComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox3.DropDownWidth = 121;
-            this.materialComboBox3.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox3.FormattingEnabled = true;
-            this.materialComboBox3.Hint = "Pago (All)";
-            this.materialComboBox3.IntegralHeight = false;
-            this.materialComboBox3.ItemHeight = 29;
-            this.materialComboBox3.Location = new System.Drawing.Point(800, 100);
-            this.materialComboBox3.MaxDropDownItems = 4;
-            this.materialComboBox3.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox3.Name = "materialComboBox3";
-            this.materialComboBox3.Size = new System.Drawing.Size(140, 35);
-            this.materialComboBox3.StartIndex = 0;
-            this.materialComboBox3.TabIndex = 43;
-            this.materialComboBox3.UseTallSize = false;
+            this.cmb_Filtro_Pago.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmb_Filtro_Pago.AutoResize = false;
+            this.cmb_Filtro_Pago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmb_Filtro_Pago.Depth = 0;
+            this.cmb_Filtro_Pago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmb_Filtro_Pago.DropDownHeight = 118;
+            this.cmb_Filtro_Pago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Filtro_Pago.DropDownWidth = 121;
+            this.cmb_Filtro_Pago.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmb_Filtro_Pago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmb_Filtro_Pago.FormattingEnabled = true;
+            this.cmb_Filtro_Pago.Hint = "Pago (All)";
+            this.cmb_Filtro_Pago.IntegralHeight = false;
+            this.cmb_Filtro_Pago.ItemHeight = 29;
+            this.cmb_Filtro_Pago.Items.AddRange(new object[] {
+            "Total a Pagar",
+            "Ninguno"});
+            this.cmb_Filtro_Pago.Location = new System.Drawing.Point(799, 100);
+            this.cmb_Filtro_Pago.MaxDropDownItems = 4;
+            this.cmb_Filtro_Pago.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmb_Filtro_Pago.Name = "cmb_Filtro_Pago";
+            this.cmb_Filtro_Pago.Size = new System.Drawing.Size(156, 35);
+            this.cmb_Filtro_Pago.StartIndex = 1;
+            this.cmb_Filtro_Pago.TabIndex = 43;
+            this.cmb_Filtro_Pago.UseTallSize = false;
             // 
-            // materialComboBox2
+            // cmb_Filtro_Cliente
             // 
-            this.materialComboBox2.AutoResize = false;
-            this.materialComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox2.Depth = 0;
-            this.materialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox2.DropDownHeight = 118;
-            this.materialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox2.DropDownWidth = 121;
-            this.materialComboBox2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox2.FormattingEnabled = true;
-            this.materialComboBox2.Hint = "Cliente (All)";
-            this.materialComboBox2.IntegralHeight = false;
-            this.materialComboBox2.ItemHeight = 29;
-            this.materialComboBox2.Location = new System.Drawing.Point(649, 100);
-            this.materialComboBox2.MaxDropDownItems = 4;
-            this.materialComboBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox2.Name = "materialComboBox2";
-            this.materialComboBox2.Size = new System.Drawing.Size(140, 35);
-            this.materialComboBox2.StartIndex = 0;
-            this.materialComboBox2.TabIndex = 42;
-            this.materialComboBox2.UseTallSize = false;
+            this.cmb_Filtro_Cliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmb_Filtro_Cliente.AutoResize = false;
+            this.cmb_Filtro_Cliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmb_Filtro_Cliente.Depth = 0;
+            this.cmb_Filtro_Cliente.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmb_Filtro_Cliente.DropDownHeight = 118;
+            this.cmb_Filtro_Cliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_Filtro_Cliente.DropDownWidth = 121;
+            this.cmb_Filtro_Cliente.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmb_Filtro_Cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmb_Filtro_Cliente.FormattingEnabled = true;
+            this.cmb_Filtro_Cliente.Hint = "Cliente (All)";
+            this.cmb_Filtro_Cliente.IntegralHeight = false;
+            this.cmb_Filtro_Cliente.ItemHeight = 29;
+            this.cmb_Filtro_Cliente.Items.AddRange(new object[] {
+            "Cédula",
+            "Género",
+            "Ninguno"});
+            this.cmb_Filtro_Cliente.Location = new System.Drawing.Point(647, 100);
+            this.cmb_Filtro_Cliente.MaxDropDownItems = 4;
+            this.cmb_Filtro_Cliente.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmb_Filtro_Cliente.Name = "cmb_Filtro_Cliente";
+            this.cmb_Filtro_Cliente.Size = new System.Drawing.Size(140, 35);
+            this.cmb_Filtro_Cliente.StartIndex = 1;
+            this.cmb_Filtro_Cliente.TabIndex = 42;
+            this.cmb_Filtro_Cliente.UseTallSize = false;
             // 
-            // materialComboBox1
+            // cmb_filtro_Factura
             // 
-            this.materialComboBox1.AutoResize = false;
-            this.materialComboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox1.Depth = 0;
-            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox1.DropDownHeight = 118;
-            this.materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox1.DropDownWidth = 121;
-            this.materialComboBox1.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.Hint = "Factura (All)";
-            this.materialComboBox1.IntegralHeight = false;
-            this.materialComboBox1.ItemHeight = 29;
-            this.materialComboBox1.Location = new System.Drawing.Point(498, 100);
-            this.materialComboBox1.MaxDropDownItems = 4;
-            this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox1.Name = "materialComboBox1";
-            this.materialComboBox1.Size = new System.Drawing.Size(140, 35);
-            this.materialComboBox1.StartIndex = 0;
-            this.materialComboBox1.TabIndex = 41;
-            this.materialComboBox1.UseTallSize = false;
+            this.cmb_filtro_Factura.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmb_filtro_Factura.AutoResize = false;
+            this.cmb_filtro_Factura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmb_filtro_Factura.Depth = 0;
+            this.cmb_filtro_Factura.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmb_filtro_Factura.DropDownHeight = 118;
+            this.cmb_filtro_Factura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_filtro_Factura.DropDownWidth = 121;
+            this.cmb_filtro_Factura.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cmb_filtro_Factura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmb_filtro_Factura.FormattingEnabled = true;
+            this.cmb_filtro_Factura.Hint = "Factura (All)";
+            this.cmb_filtro_Factura.IntegralHeight = false;
+            this.cmb_filtro_Factura.ItemHeight = 29;
+            this.cmb_filtro_Factura.Items.AddRange(new object[] {
+            "Factura (all)",
+            "Identificador",
+            "Fecha"});
+            this.cmb_filtro_Factura.Location = new System.Drawing.Point(495, 100);
+            this.cmb_filtro_Factura.MaxDropDownItems = 4;
+            this.cmb_filtro_Factura.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmb_filtro_Factura.Name = "cmb_filtro_Factura";
+            this.cmb_filtro_Factura.Size = new System.Drawing.Size(140, 35);
+            this.cmb_filtro_Factura.StartIndex = 1;
+            this.cmb_filtro_Factura.TabIndex = 41;
+            this.cmb_filtro_Factura.UseTallSize = false;
             // 
-            // rjButton1
+            // txt_busqueda
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Gainsboro;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 2;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(450, 100);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(35, 35);
-            this.rjButton1.TabIndex = 40;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            // 
-            // materialTextBox1
-            // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.Hint = "Buscar...";
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(22, 99);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(422, 36);
-            this.materialTextBox1.TabIndex = 39;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = global::Capa_Presentacion.Properties.Resources.search_square_svgrepo_com__Custom_;
-            this.materialTextBox1.UseTallSize = false;
+            this.txt_busqueda.AnimateReadOnly = false;
+            this.txt_busqueda.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_busqueda.Depth = 0;
+            this.txt_busqueda.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txt_busqueda.Hint = "Buscar...";
+            this.txt_busqueda.LeadingIcon = null;
+            this.txt_busqueda.Location = new System.Drawing.Point(22, 99);
+            this.txt_busqueda.MaxLength = 50;
+            this.txt_busqueda.MouseState = MaterialSkin.MouseState.OUT;
+            this.txt_busqueda.Multiline = false;
+            this.txt_busqueda.Name = "txt_busqueda";
+            this.txt_busqueda.Size = new System.Drawing.Size(357, 36);
+            this.txt_busqueda.TabIndex = 39;
+            this.txt_busqueda.Text = "";
+            this.txt_busqueda.TrailingIcon = null;
+            this.txt_busqueda.UseTallSize = false;
             // 
             // btn_Eliminar
             // 
@@ -283,7 +296,6 @@
             // 
             this.lbl_TOP.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_TOP.Font = new System.Drawing.Font("Koodak", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_TOP.Image = global::Capa_Presentacion.Properties.Resources.Line_1;
             this.lbl_TOP.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lbl_TOP.Location = new System.Drawing.Point(0, 0);
             this.lbl_TOP.Name = "lbl_TOP";
@@ -292,6 +304,17 @@
             this.lbl_TOP.TabIndex = 1;
             this.lbl_TOP.Text = "FACTURAS";
             this.lbl_TOP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // divider
+            // 
+            this.divider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.divider.Depth = 0;
+            this.divider.Location = new System.Drawing.Point(12, 69);
+            this.divider.MouseState = MaterialSkin.MouseState.HOVER;
+            this.divider.Name = "divider";
+            this.divider.Size = new System.Drawing.Size(1348, 5);
+            this.divider.TabIndex = 53;
+            this.divider.Text = "materialDivider1";
             // 
             // Frm_MFactura_Facturas
             // 
@@ -322,12 +345,13 @@
         private System.Windows.Forms.DataGridView dtgv_Factura;
         private MaterialSkin.Controls.MaterialButton btn_Editar;
         private MaterialSkin.Controls.MaterialButton btn_Eliminar;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private User_Controls.RJButton rjButton1;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox3;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox2;
-        private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
-        private MaterialSkin.Controls.MaterialFloatingActionButton materialFloatingActionButton1;
+        private MaterialSkin.Controls.MaterialTextBox txt_busqueda;
+        private MaterialSkin.Controls.MaterialComboBox cmb_Filtro_Pago;
+        private MaterialSkin.Controls.MaterialComboBox cmb_Filtro_Cliente;
+        private MaterialSkin.Controls.MaterialComboBox cmb_filtro_Factura;
+        private MaterialSkin.Controls.MaterialFloatingActionButton btn_search;
         private User_Controls.RJButton btn_Cerrar_Ventana;
+        private MaterialSkin.Controls.MaterialFloatingActionButton btn_refresh;
+        private MaterialSkin.Controls.MaterialDivider divider;
     }
 }
